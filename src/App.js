@@ -3,8 +3,10 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 // pages
 import Home from './pages/Home'
-import Client from './pages/Client'
+import Count from './pages/Count'
 import About from './pages/About'
+
+// components
 import NavBar from './components/NavBar';
 
 function App() {
@@ -14,8 +16,8 @@ function App() {
       <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route path='/' element={<Home teste={'testando'}/>}/>
-        <Route path='/client' element={<Client />}/>
+        <Route path='/' element={<Home />}/>
+        <Route path='/count' element={<Count />}/>
         <Route path='/about' element={<About />}/>
       </Routes>
       </BrowserRouter>
